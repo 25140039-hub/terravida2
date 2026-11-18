@@ -1,0 +1,441 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto Escolar TerraV1da - Biologia e Informatica</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background-color:#eef2f5;color:#111;margin:0;padding:10px}
+#contenedor{width:98%;max-width:1000px;margin:0 auto;background-color:#ffffff;border:3px solid #005522;padding:15px;box-shadow:2px 2px 8px #aaa}
+header{background-color:#007733;color:white;text-align:center;padding:18px;border:2px solid #003311;margin-bottom:12px}
+h1{margin:0;font-size:25px;font-family:'Trebuchet MS',sans-serif;text-transform:uppercase}
+.subtitulo{font-size:13px;margin-top:6px;color:#ddffdd}
+nav{background-color:#003366;padding:8px;text-align:center;margin-bottom:15px}
+nav button{background-color:#ffee00;color:#000;font-weight:bold;border:1px solid #000;padding:6px 9px;margin:2px;cursor:pointer;font-size:11px}
+nav button:hover{background-color:#ffcc00}
+nav button.active{background-color:#cc0000;color:#fff}
+.pagina{display:none;border:1px solid #bbb;padding:15px;background-color:#fff;margin-bottom:15px}
+.pagina.activa{display:block}
+h2{color:#003366;border-bottom:3px solid #007733;padding-bottom:4px;font-size:19px;margin-top:5px}
+h3{color:#006622;font-size:15px;margin-top:12px}
+h4{color:#222;font-size:13px;margin-bottom:2px}
+p,li{font-size:13px;line-height:1.5;text-align:justify}
+.caja-info{background-color:#eaf2f8;border:2px dashed #003366;padding:12px;margin:10px 0}
+.caja-alerta{background-color:#fff3cd;border:2px solid #ffebaa;padding:10px;margin:10px 0;font-size:12px}
+.galeria-especies{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;margin:15px 0}
+.tarjeta-especie{border:2px solid #007733;background-color:#fafafa;width:48%;min-width:240px;padding:8px;box-sizing:border-box}
+.tarjeta-especie img{width:100%;height:150px;object-fit:cover;border:1px solid #333}
+table{width:100%;border-collapse:collapse;margin:12px 0;background-color:#fff}
+table,th,td{border:2px solid #003366}
+th{background-color:#007733;color:#fff;padding:7px;text-align:left;font-size:13px}
+td{padding:7px;font-size:12px}
+.tabla-foda td{width:50%;vertical-align:top}
+.foda-f{background-color:#d4edda}
+.foda-o{background-color:#d1ecf1}
+.foda-d{background-color:#fff3cd}
+.foda-a{background-color:#f8d7da}
+.flujo-botones{margin-top:20px;padding-top:10px;border-top:2px solid #000;display:flex;justify-content:space-between}
+.btn-flujo{background-color:#007733;color:#fff;border:2px solid #000;padding:8px 14px;font-size:13px;font-weight:bold;cursor:pointer}
+.btn-flujo:hover{background-color:#004411}
+.btn-inicio{background-color:#b30000}
+.btn-inicio:hover{background-color:#800000}
+.contenedor-video{text-align:center;margin:15px 0;background-color:#111;padding:10px}
+iframe{max-width:100%;border:1px solid #fff}
+.lista-fuentes li{margin-bottom:8px}
+.lista-fuentes a{color:#003399;font-weight:bold;text-decoration:underline}
+footer{background-color:#222;color:#fff;text-align:center;padding:10px;font-size:11px;margin-top:10px}
+</style>
+</head>
+<body>
+<div id="contenedor">
+<header>
+<h1>EMPRESA ESCOLAR TERRAV1DA</h1>
+<div class="subtitulo">PROYECTO AMBIENTAL SUSTENTABLE - AGENDA 2030 ONU (ODS 13 Y ODS 15)</div>
+</header>
+<nav>
+<button id="nav-p1" class="active" onclick="irAPagina(1)">1. Inicio</button>
+<button id="nav-p2" onclick="irAPagina(2)">2. Biodiversidad</button>
+<button id="nav-p3" onclick="irAPagina(3)">3. ODS 13 y 15</button>
+<button id="nav-p4" onclick="irAPagina(4)">4. Proyectos</button>
+<button id="nav-p5" onclick="irAPagina(5)">5. FODA</button>
+<button id="nav-p6" onclick="irAPagina(6)">6. Fuentes</button>
+<button id="nav-p7" onclick="irAPagina(7)">7. Contacto</button>
+</nav>
+
+<div id="pagina1" class="pagina activa">
+<h2>Pagina 1: Presentacion General del Proyecto TerraV1da</h2>
+<div class="caja-info">
+<p><b>¿Quienes Somos?</b> TerraV1da es una organizacion ambiental estudiantil conformada por alumnos de secundaria enfocados en la preservacion de los ecosistemas terrestres, la biodiversidad de zonas montañosas y el rescate del patrimonio biocultural dentro de nuestro entorno escolar y comunitario.</p>
+</div>
+<h3>Diagnostico y Planteamiento del Problema Escolar</h3>
+<p>En nuestra escuela y en las zonas urbanas cercanas hemos detectado una perdida progresiva de areas verdes, falta de informacion sobre las especies nativas de la region y una gran generacion de residuos solidos como botellas de PET y empaques plásticos. La falta de educacion ambiental practica provoca que la comunidad escolar desaproveche los espacios naturales y desconozca como el cambio climatico global afecta de forma directa nuestro entorno inmediato.</p>
+<p>Ante esta situacion, TerraV1da nace como un proyecto formativo que aplica la metodologia del aprendizaje basado en proyectos (ABP) para involucrar activamente a estudiantes, profesores y padres de familia en soluciones de bajo costo pero de alto impacto local.</p>
+<h3>Mision del Proyecto</h3>
+<p>Somos una organizacion estudiantil comprometida con la conservacion de los ecosistemas montañosos y su biodiversidad, mediante acciones practicas de reforestacion, proteccion de especies y rescate del patrimonio biocultural, para fomentar el desarrollo sostenible en nuestra comunidad escolar y en la colonia circundante.</p>
+<h3>Vision hacia el año 2030</h3>
+<p>Ser hacia el año 2030 una empresa juvenil de gran referencia en la gestion ambiental escolar y la recuperacion de habitats naturales locales, destacando por inspirar a nuevas generaciones de estudiantes a liderar un cambio positivo, consciente y responsable a favor de nuestro planeta.</p>
+<h3>Valores y Principios Operativos</h3>
+<ul>
+<li><b>Responsabilidad Ambiental:</b> Cada estudiante asume el compromiso de reducir su huella ecologica en el aula.</li>
+<li><b>Trabajo Colaborativo:</b> Distribuimos responsabilidades especificas segun las habilidades de cada integrante.</li>
+<li><b>Innovacion con Recursos Reciclados:</b> Diseñamos herramientas y jardineras utilizando unicamente materiales reutilizados del taller escolar.</li>
+<li><b>Continuidad Intergeneracional:</b> Elaboramos manuales tecnicos escritos para que los grados inferiores den seguimiento al proyecto en los proximos ciclos escolares.</li>
+</ul>
+<div class="caja-alerta">
+<b>Dato Importante:</b> Nuestro trabajo esta alineado formalmente con las metas globales trazadas por la Organizacion de las Naciones Unidas (ONU) dentro de la Agenda 2030 para el Desarrollo Sostenible.
+</div>
+<div class="flujo-botones">
+<span></span>
+<button class="btn-flujo" onclick="irAPagina(2)">Ir a Pagina 2: Biodiversidad &rarr;</button>
+</div>
+</div>
+
+<div id="pagina2" class="pagina">
+<h2>Pagina 2: Biodiversidad y Ecosistemas Terrestres</h2>
+<p>Mexico es considerado un pais megadiverso ya que alberga entre el 10% y el 12% de la biodiversidad mundial. En esta seccion analizamos la importancia de proteger las especies vegetales y animales nativas de nuestros ecosistemas montañosos y zonas semiaridas.</p>
+<h3>Especies Clave de la Flora y Fauna Nacional</h3>
+<div class="galeria-especies">
+<div class="tarjeta-especie">
+<img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?w=400" alt="Ajolote" onerror="this.src='https://placehold.co/300x200/cccccc/000000?text=Ajolote'">
+<h3>Ajolote Mexicano (Ambystoma mexicanum)</h3>
+<p>Anfibio endemico del sistema lacustre del Valle de Mexico. Posee la capacidad unica de regenerar extremidades y organos. Se encuentra en peligro critico de extincion debido a la contaminacion del agua y especies invasoras.</p>
+</div>
+<div class="tarjeta-especie">
+<img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400" alt="Mariposa Monarca" onerror="this.src='https://placehold.co/300x200/cccccc/000000?text=Mariposa+Monarca'">
+<h3>Mariposa Monarca (Danaus plexippus)</h3>
+<p>Insecto conocido por su migracion masiva desde Canada hasta los bosques de oyamel en Michoacan y Estado de Mexico. Es un polinizador indispensable para la reproduccion de miles de plantas con flor.</p>
+</div>
+<div class="tarjeta-especie">
+<img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=400" alt="Pino Cembro" onerror="this.src='https://placehold.co/300x200/cccccc/000000?text=Pino+Ocote'">
+<h3>Pino Ocote (Pinus montezumae)</h3>
+<p>Arbol caracteristico de los bosques templados de montaña en Mexico. Desempeña un papel fundamental en la captura de dioxido de carbono, la retencion de suelos y la recarga de mantos acuiferos subterranos.</p>
+</div>
+<div class="tarjeta-especie">
+<img src="https://images.unsplash.com/photo-1545241047-6083a3684587?w=400" alt="Maguey" onerror="this.src='https://placehold.co/300x200/cccccc/000000?text=Maguey'">
+<h3>Maguey Pulquero (Agave salmiana)</h3>
+<p>Planta ancestral del patrimonio biocultural de Mexico. Funciona como una barrera natural contra la erosion del suelo en zonas de pendiente y absorbe la humedad del ambiente en temporadas de sequia extrema.</p>
+</div>
+</div>
+<h3>Tabla de Clasificacion de Amenazas a la Biodiversidad Local</h3>
+<table>
+<thead>
+<tr>
+<th>Especie / Ecosistema</th>
+<th>Estado de Conservacion</th>
+<th>Principal Amenaza Local</th>
+<th>Accion de Mitigacion TerraV1da</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<li><b>Bosque Templado de Montaña</b></li>
+<td>En riesgo por urbanizacion</td>
+<td>Tala ilegal y deforestacion escolar</td>
+<td>Reforestacion comunitaria con pinos nativos.</td>
+</tr>
+<tr>
+<li><b>Anfibios y Polinizadores</b></li>
+<td>Amenazados / Vulnerables</td>
+<td>Uso de insecticidas y perdida de flores</td>
+<td>Creacion de jardines de polinizadores sin quimicos.</td>
+</tr>
+<tr>
+<li><b>Suelos Semiaridos</b></li>
+<td>Erosion severa</td>
+<td>Pisoteo constante y falta de cubierta vegetal</td>
+<td>Plantacion de agaves y cactaceas retenedoras.</td>
+</tr>
+<tr>
+<li><b>Especies Cactaceas</b></li>
+<td>Protegidas por NOM-059</td>
+<td>Extraccion ilegal y falta de viveros</td>
+<td>Germinacion asistida en el laboratorio escolar.</td>
+</tr>
+</tbody>
+</table>
+<div class="caja-info">
+<p><b>Rescate del Patrimonio Biocultural:</b> Proteger la biodiversidad no solo implica cuidar plantas y animales, sino tambien recuperar los conocimientos tradicionales sobre el uso de plantas medicinales y tecnicas agricolas sostenibles como las milpas y terrazas de cultivo.</p>
+</div>
+<div class="flujo-botones">
+<button class="btn-flujo" onclick="irAPagina(1)">&larr; Pagina 1: Inicio</button>
+<button class="btn-flujo" onclick="irAPagina(3)">Ir a Pagina 3: ODS 13 y 15 &rarr;</button>
+</div>
+</div>
+
+<div id="pagina3" class="pagina">
+<h2>Pagina 3: Marco Internacional - ODS 13 y ODS 15 de la ONU</h2>
+<p>La Agenda 2030 aprobada por la Asamblea General de las Naciones Unidas en 2015 establece 17 Objetivos de Desarrollo Sostenible. El proyecto TerraV1da centra sus esfuerzos directamente en el ODS 13 y ODS 15.</p>
+<h3>ODS 13: Accion por el Clima</h3>
+<p>El cambio climatico es uno de los mayores desafios de nuestra era. Sus efectos incluyen el aumento de temperaturas globales, alteracion de los patrones de lluvia y mayor frecuencia de eventos meteorologicos extremos. A nivel escolar, la falta de sombra y vegetacion incrementa las islas de calor dentro de los patios de juego.</p>
+<h4>Metas Específicas del ODS 13 aplicadas al plantel:</h4>
+<ul>
+<li>Fortalecer la resiliencia y la capacidad de adaptacion desde la infraestructura escolar.</li>
+<li>Incorporar medidas relativas al cambio climatico en los programas de estudio curriculares.</li>
+<li>Mejorar la educacion, la sensibilizacion y la capacidad humana respecto de la mitigacion del cambio climatico.</li>
+</ul>
+<h3>ODS 15: Vida de Ecosistemas Terrestres</h3>
+<p>Este objetivo busca proteger, restablecer y promover el uso sostenible de los ecosistemas terrestres, gestionar de manera sostenible los bosques, luchar contra la desertificacion, detener e invertir la degradacion de las tierras y frenar la perdida de biodiversidad.</p>
+<h4>Metas Específicas del ODS 15 aplicadas al plantel:</h4>
+<ul>
+<li>Asegurar la conservacion de los ecosistemas de montaña y su biodiversidad.</li>
+<li>Luchar contra la desertificacion y rehabilitar las tierras y suelos degradados del patio escolar.</li>
+<li>Adoptar medidas urgentes para frenar la caza furtiva y el trafico de especies protegidas.</li>
+</ul>
+<h3>Tabla Comparativa: Diagnostico Escolar vs Metas ONU 2030</h3>
+<table>
+<thead>
+<tr>
+<th>Indicador Ambiental</th>
+<th>Situacion Inicial del Plantel</th>
+<th>Meta Objetivo TerraV1da 2030</th>
+<th>Estrategia Pedagogica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Areas Verdes Escolares</b></td>
+<td>Suelos compactados y sin vegetacion</td>
+<td>Cobertura vegetal del 40% de areas libres</td>
+<td>Jornadas de siembra y compostaje escolar.</td>
+</tr>
+<tr>
+<td><b>Separacion de Residuos</b></td>
+<td>Mezcla total de basura inorganica</td>
+<td>Reciclaje activo del 80% del PET generado</td>
+<td>Colocacion de contenedores etiquetados por salon.</td>
+</tr>
+<tr>
+<td><b>Conciencia Climatica</b></td>
+<td>Desconocimiento general de la Agenda 2030</td>
+<td>100% de alumnos capacitados en ODS</td>
+<li>Talleres grupales y campañas digitales.</li>
+</tr>
+<tr>
+<td><b>Captura de Carbono Local</b></td>
+<td>Nula arborizacion activa</td>
+<td>20 arboles nativos en desarrollo constante</td>
+<td>Riego programado con captacion de agua pluvial.</td>
+</tr>
+</tbody>
+</table>
+<div class="flujo-botones">
+<button class="btn-flujo" onclick="irAPagina(2)">&larr; Pagina 2: Biodiversidad</button>
+<button class="btn-flujo" onclick="irAPagina(4)">Ir a Pagina 4: Proyectos &rarr;</button>
+</div>
+</div>
+
+<div id="pagina4" class="pagina">
+<h2>Pagina 4: Metodologia y Proyectos Ambientales</h2>
+<p>En esta pagina detallamos las actividades tecnicas y proyectos especificos diseñados por la empresa estudiantil TerraV1da para ejecutarse en el espacio del Aula Maker y las areas comunitarias.</p>
+<h3>1. Taller de Reciclaje y Construccion de Jardineras Verticales</h3>
+<p>Aprovechando el material PET recolectado en los salones de clase, cortamos y ensamblamos estructuras verticales fijadas en los muros perimetrales de la escuela. Estas jardineras permiten cultivar especies suculentas y plantas medicinales sin ocupar espacio en el suelo.</p>
+<h3>2. Jornadas de Reforestacion y Rehabilitacion de Suelos</h3>
+<p>Realizamos analisis basicos de pH y compactacion del suelo en el laboratorio de ciencias. Posterior a la preparacion de la tierra con composta organica elaborada con desechos de la cafeteria, procedemos a la plantacion de especies nativas como pinos y agaves.</p>
+<h3>3. Manuales y Guias de Transferencia Tecnica</h3>
+<p>Para asegurar que el proyecto no desaparezca cuando nuestro equipo egrese de la secundaria, redactamos guias metodologicas escritas paso a paso. Estos manuales se entregan a la direccion escolar y a los profesores de grados inferiores para formar el nuevo comite ecologico cada ciclo escolar.</p>
+<h3>Cronograma General de Actividades Escolares</h3>
+<table>
+<thead>
+<tr>
+<th>Fase del Proyecto</th>
+<th>Descripcion de la Tarea</th>
+<th>Recursos Necesarios</th>
+<th>Responsable del Equipo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fase 1: Diagnostico</td>
+<td>Mapeo de areas verdes y conteo de contenedores</td>
+<td>Libretas, camaras de celular</td>
+<td>Francisco Rodriguez</td>
+</tr>
+<tr>
+<td>Fase 2: Recoleccion</td>
+<td>Acopio de botellas de PET y latas de aluminio</td>
+<td>Bolsas de acopio, bascula</td>
+<td>Jose Cruz Lopez</td>
+</tr>
+<tr>
+<td>Fase 3: Fabricacion</td>
+<td>Corte de botellas y armado en Aula Maker</td>
+<td>Tijeras, cuerdas, tierra vegetal</td>
+<td>Valeria Magliocca</td>
+</tr>
+<tr>
+<td>Fase 4: Reforestacion</td>
+<td>Siembra de plantas nativas y riego inicial</td>
+<td>Palas de jardineria, regaderas</td>
+<td>Brenda Collette Jimenez</td>
+</tr>
+<tr>
+<td>Fase 5: Difusion</td>
+<td>Publicacion de avances y mantenimiento semanal</td>
+<td>Redes sociales, carteles impresos</td>
+<td>Kaleb Rodriguez</td>
+</tr>
+</tbody>
+</table>
+<h3>Video Educativo Seleccionado para la Comunidad</h3>
+<p>Como parte de nuestras sesiones de sensibilizacion, proyectamos el siguiente video documental sobre el cuidado ambiental y la accion climatica global:</p>
+<div class="contenedor-video">
+<iframe width="500" height="280" src="https://www.youtube.com/embed/gS22XvX7Ysc" title="Cuidado del medio ambiente ONU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="flujo-botones">
+<button class="btn-flujo" onclick="irAPagina(3)">&larr; Pagina 3: ODS 13 y 15</button>
+<button class="btn-flujo" onclick="irAPagina(5)">Ir a Pagina 5: FODA &rarr;</button>
+</div>
+</div>
+
+<div id="pagina5" class="pagina">
+<h2>Pagina 5: Matriz de Analisis FODA y Estrategias</h2>
+<p>A continuacion se presenta la matriz FODA completa desarrollada por el equipo TerraV1da para evaluar la viabilidad operativa y financiera de nuestras propuestas ecológicas.</p>
+<table class="tabla-foda">
+<tr>
+<td class="foda-f">
+<h3>FORTALEZAS (Internas)</h3>
+<ul>
+<li>Gran disposicion para proponer ideas frescas y proyectos ecologicos estructurados.</li>
+<li>Acceso a las instalaciones del plantel, herramientas de jardineria y el Aula Maker.</li>
+<li>Capacidad de adaptacion rapida a materiales reciclados y recursos de bajo costo.</li>
+<li>Division clara de tareas entre los 5 integrantes segun sus fortalezas personales.</li>
+</ul>
+</td>
+<td class="foda-o">
+<h3>OPORTUNIDADES (Externas)</h3>
+<ul>
+<li>Creciente interes global y escolar por combatir el cambio climatico y cuidar el planeta.</li>
+<li>Respaldo directo de profesores de ciencias, directivos y familias del plantel.</li>
+<li>Posibilidad de educar a nuestros compañeros y generar una cultura ambiental duradera.</li>
+<li>Uso de plataformas digitales gratuitas para la promocion y gestion de la empresa.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="foda-d">
+<h3>DEBILIDADES (Internas)</h3>
+<ul>
+<li><b>Equipo reducido:</b> Somos solo 5 estudiantes para atender todo el plantel.</li>
+<li><b>Sin capital financiero:</b> Presupuesto nulo para la compra de insumos comerciales.</li>
+<li>Carga de tareas escolares cotidianas y horarios de clase ajustados.</li>
+<li>Falta de experiencia previa en coordinacion de eventos comunitarios masivos.</li>
+</ul>
+</td>
+<td class="foda-a">
+<h3>AMENAZAS (Externas)</h3>
+<ul>
+<li><b>Cierre de ciclo escolar:</b> Proximidad de examenes finales y egreso del equipo.</li>
+<li>Empresa estudiantil nueva con poca credibilidad inicial en la comunidad.</li>
+<li>Posible desinteres o vandalismo hacia las jardineras instaladas en patios.</li>
+<li>Condiciones climaticas adversas (sequias o lluvias extremas) que dañen los cultivos.</li>
+</ul>
+</td>
+</tr>
+</table>
+<h3>Estrategias de Mitigacion y Plan de Accion Operativo</h3>
+<div class="caja-info">
+<h4>1. Solucion al Equipo Reducido y Falta de Capital:</h4>
+<p>No intentaremos abarcar todo el municipio. Nos enfocaremos en metas pequeñas, puntuales y constantes dentro de la escuela. Toda nuestra infraestructura sera construida exclusivamente con botellas recicladas, donaciones de plantas de los propios alumnos y compostaje organico casero.</p>
+<h4>2. Solucion al Final del Ciclo Escolar:</h4>
+<p>Para evitar que el proyecto muera al terminar el año lectivo, el equipo elaborara manuales impresos y guias digitales estructuradas. Estas seran entregadas formalmente a los profesores para que los alumnos de grados inferiores las retomen en el siguiente ciclo.</p>
+</div>
+<div class="flujo-botones">
+<button class="btn-flujo" onclick="irAPagina(4)">&larr; Pagina 4: Proyectos</button>
+<button class="btn-flujo" onclick="irAPagina(6)">Ir a Pagina 6: Fuentes &rarr;</button>
+</div>
+</div>
+
+<div id="pagina6" class="pagina">
+<h2>Pagina 6: Fuentes de Consulta y Bibliografia</h2>
+<p>Para la elaboracion de los contenidos teóricos, diagnosticos sobre biodiversidad y fundamentacion de los ODS en este proyecto escolar, el equipo TerraV1da consulto las siguientes 10 fuentes oficiales y bibliograficas disponibles en linea:</p>
+<ol class="lista-fuentes">
+<li><b>Organizacion de las Naciones Unidas (ONU):</b> <a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/" target="_blank">Objetivos de Desarrollo Sostenible - Agenda 2030</a>. Portal oficial sobre las 17 metas mundiales.</li>
+<li><b>ONU - ODS 13 Accion por el Clima:</b> <a href="https://www.un.org/sustainabledevelopment/es/climate-change-2/" target="_blank">Detalles y metas del ODS 13 para combatir el cambio climatico</a>.</li>
+<li><b>ONU - ODS 15 Ecosistemas Terrestres:</b> <a href="https://www.un.org/sustainabledevelopment/es/biodiversity/" target="_blank">Detalles del ODS 15 sobre biodiversidad y bosques</a>.</li>
+<li><b>Comision Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO):</b> <a href="https://www.biodiversidad.gob.mx/" target="_blank">Biodiversidad Mexicana</a>. Informacion sobre flora, fauna y ecosistemas del pais.</li>
+<li><b>Secretaria de Medio Ambiente y Recursos Naturales (SEMARNAT):</b> <a href="https://www.gob.mx/semarnat" target="_blank">Acciones y programas de proteccion ambiental en Mexico</a>.</li>
+<li><b>World Wildlife Fund (WWF Mexico):</b> <a href="https://www.wwf.org.mx/" target="_blank">Proyectos de conservacion de especies prioritarias como la Mariposa Monarca</a>.</li>
+<li><b>Instituto Nacional de Estadistica y Geografia (INEGI):</b> <a href="https://www.inegi.org.mx/temas/biologia/" target="_blank">Datos geograficos y del medio ambiente en Mexico</a>.</li>
+<li><b>Union Internacional para la Conservacion de la Naturaleza (UICN):</b> <a href="https://www.iucnredlist.org/es" target="_blank">Lista Roja de Especies Amenazadas mundial</a>.</li>
+<li><b>Programa de las Naciones Unidas para el Medio Ambiente (PNUMA):</b> <a href="https://www.unep.org/es" target="_blank">Informes globales sobre restauracion de ecosistemas y suelos</a>.</li>
+<li><b>Comision Nacional Forestal (CONAFOR):</b> <a href="https://www.gob.mx/conafor" target="_blank">Guia practica para la reforestacion y cuidado de arboles nativos</a>.</li>
+</ol>
+<div class="caja-info">
+<p><b>Nota Metodologica:</b> Todos los enlaces te llevaran directamente a los portales gubernamentales u organizacionales de donde obtuvimos la informacion tecnica para nuestro informe de biologia e informatica.</p>
+</div>
+<div class="flujo-botones">
+<button class="btn-flujo" onclick="irAPagina(5)">&larr; Pagina 5: FODA</button>
+<button class="btn-flujo" onclick="irAPagina(7)">Ir a Pagina 7: Contacto &rarr;</button>
+</div>
+</div>
+
+<div id="pagina7" class="pagina">
+<h2>Pagina 7: Directorio del Equipo y Contacto Oficial</h2>
+<p>A continuacion se presenta la lista oficial de los 5 alumnos integrantes de la empresa estudiantil <b>TerraV1da</b>, sus respectivos numeros de lista (N.L.) y sus responsabilidades asignadas en la estructura organizativa del proyecto:</p>
+<table>
+<thead>
+<tr>
+<th>N.L.</th>
+<th>Nombre Completo del Alumno</th>
+<th>Rol y Asignacion de Tareas dentro de TerraV1da</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>03</b></td>
+<td>Angel Kaleb Carrizoza Rodriguez</td>
+<td>Encargado de la administracion de contactos, redes sociales y gestion del control interno de la empresa.</td>
+</tr>
+<tr>
+<td><b>04</b></td>
+<td>Jose Cruz Lopez</td>
+<td>Encargado de la publicidad, diseño de carteles y difusion de las actividades de los diferentes sectores.</td>
+</tr>
+<tr>
+<td><b>12</b></td>
+<td>Brenda Collette Jimenez Gerbacio</td>
+<td>Encargada de coordinar la administracion del trabajo digital y escrito para las nuevas tecnologias de informacion.</td>
+</tr>
+<tr>
+<td><b>14</b></td>
+<td>Valeria Zoe Magliocca Meraz</td>
+<td>Encargada de supervisar el proceso de elaboracion de los materiales y herramientas digitales de investigacion.</td>
+</tr>
+<tr>
+<td><b>25</b></td>
+<td>Francisco Rodriguez Ortega</td>
+<td>Encargado de la administracion de decisiones en lugares y objetivos especificos y centrales del proyecto.</td>
+</tr>
+</tbody>
+</table>
+<div class="caja-info" style="text-align:center">
+<h3>Contacto Institucional de la Empresa Escolar:</h3>
+<p style="font-size:16px;margin:5px 0"><b>Correo Electronico:</b> <a href="mailto:25140039@plantelazteca.edu.mx" style="color:#003366;font-weight:bold">25140039@plantelazteca.edu.mx</a></p>
+<p>Plantel Azteca - Secundaria / Prepa | Ciclo Escolar 2025 - 2026</p>
+<p>Direccion del Proyecto: Aula Maker y Laboratorio de Ciencias</p>
+</div>
+<div class="flujo-botones">
+<button class="btn-flujo" onclick="irAPagina(6)">&larr; Pagina 6: Fuentes</button>
+<button class="btn-flujo btn-inicio" onclick="irAPagina(1)">&#8634; Volver al Inicio (Pagina 1)</button>
+</div>
+</div>
+
+<footer>
+<p>Sitio Web del Proyecto Escolar TerraV1da | Plantel Azteca | Materia de Informatica y Biologia</p>
+</footer>
+</div>
+
+<script>
+function irAPagina(numPagina){
+for(let i=1;i<=7;i++){
+document.getElementById('pagina'+i).classList.remove('activa');
+document.getElementById('nav-p'+i).classList.remove('active');
+}
+document.getElementById('pagina'+numPagina).classList.add('activa');
+document.getElementById('nav-p'+numPagina).classList.add('active');
+window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
